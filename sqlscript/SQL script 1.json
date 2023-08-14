@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE PROC products\nAS\nBEGIN\n\t-- Variable declaration\n\tDECLARE @start_time DATETIME,\n\t\t@end_time DATETIME,\n\t\t@source_row_count INT,\n\t\t@target_row_count INT,\n\t\t@error_message VARCHAR(MAX),\n\t\t@ProductID VARCHAR(10),\n\t\t@unit_sold DECIMAL(5),\n\t\t@Product VARCHAR(30),\n\t\t@Total_UnitCost DECIMAL(8,2),\n\t\t@Total_UnitPrice DECIMAL(8,2),\n\t\t@city VARCHAR(30),\n\t\t@maxPurchase DECIMAL(8,2),\n\t\t@profit_percentage INT,\n\t\t@loss_percentage INT\n\t\t\nEND;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sql",
+				"poolName": "Built-in"
+			},
+			"resultLimit": -1
+		},
+		"type": "SqlQuery"
+	}
+}

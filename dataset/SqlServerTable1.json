@@ -1,0 +1,86 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "varchar"
+			},
+			{
+				"name": "Date",
+				"type": "varchar"
+			},
+			{
+				"name": "CustomerID",
+				"type": "varchar"
+			},
+			{
+				"name": "units_sold",
+				"type": "varchar"
+			},
+			{
+				"name": "Units",
+				"type": "varchar"
+			},
+			{
+				"name": "Product",
+				"type": "varchar"
+			},
+			{
+				"name": "Category",
+				"type": "varchar"
+			},
+			{
+				"name": "Segment",
+				"type": "varchar"
+			},
+			{
+				"name": "ManufacturerID",
+				"type": "varchar"
+			},
+			{
+				"name": "Manufacturer",
+				"type": "varchar"
+			},
+			{
+				"name": "Unit_Cost",
+				"type": "varchar"
+			},
+			{
+				"name": "Unit_Price",
+				"type": "varchar"
+			},
+			{
+				"name": "ZipCode",
+				"type": "varchar"
+			},
+			{
+				"name": "Email_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Region",
+				"type": "varchar"
+			},
+			{
+				"name": "District",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "Products",
+			"table": "Product_Staging"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
